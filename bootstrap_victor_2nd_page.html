@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shoes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <style>
+        .background-img {
+            background-image: url('photo.jpg');
+            height: 200px;
+        }
+
+        #my-card {
+            margin-left: 20px;
+            position: relative;
+            bottom: 40px;
+            border-radius: 0px;
+            border: none;
+            width: 12rem;
+        }
+
+        .card {
+            /*float: left;*/
+            margin-left: 2vh;
+            flex-basis: 23.333%;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+        .whats-hot-row {
+            align-items: stretch;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img src="victor.jpg" width="30" height="30" class="d-inline-block align-text-top">
+                victor
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">MEN</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">WOMEN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">KIDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">SPORTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">BRANDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">COLLECTION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">OUTLETS</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+                </form>
+                <a href="#">
+                    <img src="profile.png" width="20" height="20" style="margin-left:29 0px">
+                </a>
+                <a href="#"> <img src="bag.png" width="20" height="20" style="margin-left:30px">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div style="margin: 5vh;">
+        <div>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Men</a></li>
+                    <li class="breadcrumb-item"><a href="#">Running</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Shoes</li>
+                </ol>
+            </nav>
+
+        </div>
+        <div style="font-style: italic; margin-bottom: 10vh;">
+            <h2>MEN'S RUNNING SHOES</h2>
+            <a>RUNNING SHOES</a>
+        </div>
+    </div>
+    <div class="background-img">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="card" id="my-card">
+                    <img class="card-img-top" src="neon1.jpg" alt="Card image cap" style="border-radius: 0px;">
+                    <div class="card-body">
+
+                        <a href="#" style="font-size: 15px;font-weight: 500;color: black;">Race </a><br /><br />
+                        <a>When Seconds count</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+
+                <div class="card" id="my-card">
+                    <img class="card-img-top" src="neon2.jpg" alt="Card image cap" style="border-radius: 0px;">
+                    <div class="card-body">
+
+                        <a href="#" style="font-size: 15px;font-weight: 500;color: black;">Run </a><br /><br />
+                        <a>For everyday run</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+
+                <div class="card" id="my-card">
+                    <img class="card-img-top" src="neon3.jpg" alt="Card image cap" style="border-radius: 0px;">
+                    <div class="card-body">
+
+                        <a href="#" style="font-size: 15px;font-weight: 500;color: black;">Sportswear </a><br /><br />
+                        <a>For all day & everyday</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div style="margin: 5vh;">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="border: none;">
+                    <img class="card-img-top" src="shoe2.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                    <div class="card-body">
+
+                        <a href="#" style="font-size: 15px;font-weight: 500;color: black;">Sports Sneakers </a><br />
+                        <a>Sports Wear</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="border: none;">
+                    <img class="card-img-top" src="shoe3.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                    <div class="card-body">
+
+                        <a href="#" style="font-size: 15px;font-weight: 500;color: black;">Canvas Sneakers </a><br />
+                        <a>Casual Wear</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card" style="border: none;">
+                    <img class="card-img-top" src="shoe7.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                    <div class="card-body">
+
+                        <a href="#" style="font-size: 15px;font-weight: 500;color: black;">Leather Derbys </a><br />
+                        <a>Office Wear</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="border: none;">
+                    <img class="card-img-top" src="shoe5.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                    <div class="card-body">
+
+                        <a href="#" style="font-size: 15px;font-weight: 500;color: black;">Leather Loafers </a><br />
+                        <a>Party Wear</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div style="margin: 5vh;">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="border: none;">
+                    <img class="card-img-top" src="shoe8.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                    <div class="card-body">
+
+                        <a href="#" style="font-size: 15px;font-weight: 500;color: black;">Multicolor Sports Shoe
+                        </a><br />
+                        <a>Party Wear</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="border: none;">
+                    <img class="card-img-top" src="shoe10.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                    <div class="card-body">
+
+                        <a href="#" style="font-size: 15px;font-weight: 500;color: black;">Beige Boots </a><br />
+                        <a>Casual Wear</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="border: none;">
+                    <img class="card-img-top" src="shoe12.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                    <div class="card-body">
+
+                        <a href="#" style="font-size: 15px;font-weight: 500;color: black;">Leather Sneakers </a><br />
+                        <a>Casual Wear</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="border: none;">
+                    <img class="card-img-top" src="shoe11.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                    <div class="card-body">
+
+                        <a href="#" style="font-size: 15px;font-weight: 500;color: black;">White Sneakers</a><br />
+                        <a>Casual Wear</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div style="margin:3vh">
+            <h3>RECENTLY VIEWED ITEMS</h3>
+        </div>
+        <div class="whats-hot-row">
+            <div class="card" style="border: none;width: 13rem;">
+                <img class="card-img-top" src="shoe1.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                <div class="card-body">
+
+                    <a style="font-size: 20px;font-weight: 300;color: black;">Red & White Sneakers</a><br />
+                    <a>Casual Wear</a>
+
+                </div>
+            </div>
+            <div class="card" style="border: none;width: 13rem;">
+                <img class="card-img-top" src="shoe2.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                <div class="card-body">
+
+                    <a style="font-size: 20px;font-weight: 300;color: black;">Grey Sneakers</a><br />
+                    <a>Casual Wear</a>
+
+                </div>
+            </div>
+            <div class="card" style="border: none;width: 13rem;">
+                <img class="card-img-top" src="shoe3.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                <div class="card-body">
+
+                    <a style="font-size: 20px;font-weight: 300;color: black;">Yellow Sneakers</a><br />
+                    <a>Casual Wear</a>
+
+                </div>
+            </div>
+            <div class="card" style="border: none;width: 13rem;">
+                <img class="card-img-top" src="shoe4.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                <div class="card-body">
+
+                    <a style="font-size: 20px;font-weight: 300;color: black;">Cream Sandals</a><br />
+                    <a>Party Wear</a>
+
+                </div>
+            </div>
+            <div class="card" style="border: none;width: 13rem;">
+                <img class="card-img-top" src="shoe5.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                <div class="card-body">
+
+                    <a style="font-size: 20px;font-weight: 300;color: black;">Leather Loafers</a><br />
+                    <a>Casual Wear</a>
+
+                </div>
+            </div>
+            <div class="card" style="border: none;width: 13rem;">
+                <img class="card-img-top" src="shoe6.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                <div class="card-body">
+
+                    <a style="font-size: 20px;font-weight: 300;color: black;">Sports Shoe</a><br />
+                    <a>Performance</a>
+
+                </div>
+            </div>
+            <div class="card" style="border: none;width: 13rem;">
+                <img class="card-img-top" src="shoe7.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                <div class="card-body">
+
+                    <a style="font-size: 20px;font-weight: 300;color: black;">Leather Derbys</a><br />
+                    <a>Office Wear</a>
+
+                </div>
+            </div>
+            <div class="card" style="border: none;width: 13rem;">
+                <img class="card-img-top" src="shoe8.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                <div class="card-body">
+
+                    <a style="font-size: 20px;font-weight: 300;color: black;">Multicolor Sports Shoe</a><br />
+                    <a>Party Wear</a>
+
+                </div>
+            </div>
+            <div class="card" style="border: none;width: 13rem;">
+                <img class="card-img-top" src="shoe9.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                <div class="card-body">
+
+                    <a style="font-size: 20px;font-weight: 300;color: black;">White Sports Shoe</a><br />
+                    <a>Casual Wear</a>
+
+                </div>
+            </div>
+            <div class="card" style="border: none;width: 11rem;">
+                <img class="card-img-top" src="shoe10.jpeg" alt="Card image cap" style="border-radius: 0px;">
+                <div class="card-body">
+
+                    <a style="font-size: 20px;font-weight: 300;color: black;">Cream Sneakers</a><br />
+                    <a>Casual Wear</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <div style="margin: 7vh;font-family: serif;">
+            <h3>MEN'S RUNNING SHOES</h3>
+            <p>Whether you’re a seasoned runner with designs on dominating the track, or an enthused amateur finding
+                your feet on the street, our selection of men’s running shoes empower you to run fast, confident and
+                true. With technical design that intelligently supports every running style, our selection will help you
+                reach your goals.</p>
+            <h5>CHOOSING THE BEST MEN’S RUNNING SHOES</h5>
+            <p>
+                To start, consider the surface that you will be running on. Roads, tracks and trails all require
+                different types of grip and cushioning.
+                The type of running that you do and the frequency of your runs will also play a part in choosing your
+                best men’s running shoes. So whether you’re
+                preparing for a marathon, entering running competitions, or are a casual once-a-week runner, adidas have
+                the ideal running shoes made especially for your needs.<br /><br />
+                A professional evaluation for your running style will determine whether you run with underpronation,
+                overpronation or neutral feet. Once you have this established, you’ll be able
+                to select a pair of men’s stability running shoes or men’s running shoes for overpronation to ensure
+                maximum performance if your feet need it.<br /><br />
+                Take your current weight into account when selecting the cushioning of your men’s running shoes, as it
+                will affect the way your feet connect to the
+                ground. And when trying them on, consider going half a size larger as feet generally expand during any
+                sports activity. Before
+                taking your new men’s running shoes for a spin, it’s important to wear them in for a couple of
+                days.<br /><br />
+                Make sure you don’t use the same pair of running shoes for too long. Even though they will look new for
+                a long time, regular running shoes should only be worn for about 400
+                to 600 km. And if you’re a regular runner, ensure you have multiple pairs of shoes that you can rotate
+                through to help prevent injuries.
+                The perfect running sneakers is a deeply personal thing. It must be tailored to you in terms of size,
+                and designed to complement the shape of your foot and the way you run. Explore
+                the variations of cushioning, support and stability to ensure comfort and performance.
+            </p>
+        </div>
+
+    </div>
+    <div style="margin: 7vh;">
+        <h3>OUR CLOTHING AND SHOE CATEGORIES</h3>
+        <div class="row">
+            <div class="col-md-2">
+                <a href="#" style="text-decoration:none;color: black;">Running Shoes</a><br />
+                <a href="#" style="text-decoration:none;color: black;">Running Shorts</a><br />
+                <a href="#" style="text-decoration:none;color: black;">Running Boots</a>
+
+            </div>
+            <div class="col-md-2">
+                <a href="#" style="text-decoration:none;color: black;">Running Sneakers</a><br />
+                <a href="#" style="text-decoration:none;color: black;">Men Running Shoes</a><br />
+                <a href="#" style="text-decoration:none;color: black;">Women Running Shoes</a>
+
+            </div>
+            <div class="col-md-2">
+                <a href="#" style="text-decoration:none;color: black;">Men Running Shorts</a><br />
+                <a href="#" style="text-decoration:none;color: black;">Girls Running Shoes</a><br />
+                <a href="#" style="text-decoration:none;color: black;">Women Running Shorts</a>
+
+            </div>
+            <div class="col-md-2">
+                <a href="#" style="text-decoration:none;color: black;">Men Running T Shirts</a><br />
+                <a href="#" style="text-decoration:none;color: black;">Men Running Sneakers</a><br />
+                <a href="#" style="text-decoration:none;color: black;">Women Running T Shirts</a>
+
+            </div>
+            <div class="col-md-2">
+                <a href="#" style="text-decoration:none;color: black;">Women Running Shoes</a><br />
+                <a href="#" style="text-decoration:none;color: black;">Kids Running Shoes</a><br />
+                <a href="#" style="text-decoration:none;color: black;">Boys Running Shoes</a>
+
+            </div>
+        </div>
+    </div>
+    <div style="background-color: rgb(167, 164, 30);">
+        <div style="text-align: center;padding: 5vh;" class="row">
+            <div class="col-md-6">
+                <h5>JOIN VICTOR AND GET 15% OFF</h5>
+            </div>
+            <div class="col-md-2">
+                <a type="button"
+                    style="background-color:rgb(0, 0, 0);color:rgb(255, 255, 255);border: none;padding-left: 7vh;padding-right: 7vh;padding-top:10px;padding-bottom: 10px;font-size: 13px;font-weight: 500;">SIGN
+                    UP</a>
+            </div>
+        </div>
+    </div>
+    <div style="margin:5vh;">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <h5>PRODUCTS</h5>
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Footwear </a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Clothing </a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Accessories</a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">New Arrivals </a>
+            </div>
+            <div class="col-md-2">
+                <h5>SPORTS</h5>
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Running </a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Football </a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Gym/Training</a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Tennis </a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Outdoor</a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Basketball</a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Swimming</a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Skateboarding</a>
+
+            </div>
+            <div class="col-md-2">
+                <h5>COLLECTIONS</h5>
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Ultraboost </a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Superstar </a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">NMD</a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Predator </a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">victorColor </a>
+            </div>
+            <div class="col-md-2">
+                <h5>SUPPORT</h5>
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Help </a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Customer Services </a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Returns & Exchanges</a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Shipping </a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Order Tracker </a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Store Locater </a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Terms and Conditions </a><br />
+
+            </div>
+            <div class="col-md-2">
+                <h5>COMPANY INFO</h5>
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">About Us </a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">victor Stories </a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">App</a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Press</a><br />
+                <a href="#" style="text-decoration: none;color: rgb(85, 85, 85);">Careers</a><br />
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
